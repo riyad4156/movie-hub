@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaStream - Your Ultimate Movie Experience</title>
+    <link rel="stylesheet" href="movies-home-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/fav.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+    <header data-aos="fade-down" data-aos-duration="3000">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>MoviesHub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#tv-shows">TV Shows</a></li>
+                <li><a href="#new-releases">New Releases</a></li>
+                <li><a href="#my-list">My List</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="searchBtn" class="search-btn"><i class="fas fa-search"></i></button>
+                <button id="profileBtn" class="profile-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+        <div id="searchBar" class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search movies...">
+            <button id="searchSubmit"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Welcome to CinemaStream</h1>
+                <p  data-aos="fade-up" data-aos-duration="2000" >Discover and stream thousands of movies and TV shows</p>
+                <a  data-aos="fade-up" data-aos-duration="3000" href="movies-home-page.html" class="cta-btn" onclick="window.open('movies-home-page.html')">Visit moviehub </a>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2 data-aos="fade-right">Featured Titles</h2>
+            <div class="featured-grid">
+                <div data-aos="fade-right" data-aos-duration="1000" class="featured-item item1"></div>
+                <div data-aos="fade-right" data-aos-duration="1500" class="featured-item item2"></div>
+                <div data-aos="fade-right" data-aos-duration="2000" class="featured-item item3"></div>
+                <div data-aos="fade-right" data-aos-duration="2500" class="featured-item item4"></div>
+                <div data-aos="fade-right" data-aos-duration="3000" class="featured-item item5"></div>
+                <div data-aos="fade-right" data-aos-duration="3500" class="featured-item item6"></div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2 data-aos="fade-right">Browse by Genre</h2>
+            <div class="category-list">
+                <a data-aos="fade-right" data-aos-duration="500" href="#" class="category-item">Action</a>
+                <a data-aos="fade-right" data-aos-duration="1000" href="#" class="category-item">Comedy</a>
+                <a data-aos="fade-right" data-aos-duration="1500" href="#" class="category-item">Drama</a>
+                <a data-aos="fade-right" data-aos-duration="2000" href="#" class="category-item">Sci-Fi</a>
+                <a data-aos="fade-right" data-aos-duration="2500" href="#" class="category-item">Horror</a>
+                <a data-aos="fade-right" data-aos-duration="3000" href="#" class="category-item">Romance</a>
+                <a data-aos="fade-right" data-aos-duration="3500" href="#" class="category-item">Thriller</a>
+                <a data-aos="fade-right" data-aos-duration="4000" href="#" class="category-item">Animation</a>
+            </div>
+        </section>
+
+        <section class="trending">
+            <h2 data-aos="fade-right">Trending Now</h2>
+            <div class="trending-slider">
+                <div class="trending-track">
+                    <img src="images/batman.webp" alt="Trending movie 1" class="trending-item">
+                    <img src="images/scream.jpg" alt="Trending movie 2" class="trending-item">
+                    <img src="images/thunderbolts_lob_crd_03.jpg" alt="Trending movie 3" class="trending-item">
+                    <img src="images/guardiansofthegalaxyvolume3_lob_crd_03.jpg" alt="Trending movie 4" class="trending-item">
+                    <img src="images/inception.jpg" alt="Trending movie 5" class="trending-item">
+                    <img src="images/deadpoolandwolverine_lob_crd_03.jpg" alt="Trending movie 6" class="trending-item">
+                    <img src="images/AVATAR_RERLS_1SHT_DIGITAL_sRGB_V7.avif" alt="Trending movie 7" class="trending-item">
+                    <img src="images/batman.webp" alt="Trending movie 8" class="trending-item">
+                </div>
+            </div>
+        </section>
+    
+
+        <section id="searchResults" class="search-results">
+            <h2>Search Results</h2>
+            <div id="searchResultsGrid" class="search-results-grid"></div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest movies and TV shows</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <aside id="userSidebar" class="user-sidebar">
+        <div class="sidebar-content">
+            <h3>User Menu</h3>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About CinemaStream</h3>
+                <p>CinemaStream is your ultimate destination for streaming movies and TV shows. Enjoy a vast library of content anytime, anywhere.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i  class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CinemaStream. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="movies-home-page.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+</html>

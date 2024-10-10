@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHub v5</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/fav.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>MovieHub</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search movies...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <button class="log-sign-btn" onclick="window.open('log-sign.html', '_blank', 'noopener,noreferrer')">Login/Sign Up</button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2><i class="fas fa-list"></i> Categories</h2>
+            <button class="category-btn active" data-category="all">All Movies</button>
+            <button class="category-btn" data-category="hindi">Hindi Movies</button>
+            <button class="category-btn" data-category="english">English Movies</button>
+            <button class="category-btn" data-category="action">Action</button>
+            <button class="category-btn" data-category="comedy">Comedy</button>
+            <button class="category-btn" data-category="drama">Drama</button>
+        </aside>
+
+        <main>
+             
+
+            <section id="movies">
+                <h2><i class="fas fa-film"></i> All Movies</h2>
+                <div class="movie-grid">
+                    <!-- Movie items will be added dynamically -->
+                </div>
+            </section>
+
+            <section id="featured">
+                <h2><i class="fas fa-star"></i> Featured Movies</h2>
+                <div class="featured-movies">
+                    <!-- Featured movies will be added dynamically -->
+                </div>
+            </section>
+
+           
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-info-circle"></i> About Us</h3>
+                <p>MovieHub is your go-to platform for discovering and enjoying a wide range of movies from different languages and genres.</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-envelope"></i> Contact</h3>
+                <p>Email: info@moviehub.com</p>
+                <p>Phone: xxxxxxxxxx</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MovieHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

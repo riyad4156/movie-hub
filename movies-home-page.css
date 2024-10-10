@@ -264,28 +264,28 @@ nav {
 .item1 {
     grid-column: span 2;
     grid-row: span 2;
-    background-image: url('images/AVATAR_RERLS_1SHT_DIGITAL_sRGB_V7.avif');
+    background-image: url('AVATAR_RERLS_1SHT_DIGITAL_sRGB_V7.avif');
 }
 
 .item2 {
-    background-image: url('images/batman.webp');
+    background-image: url('batman.webp');
     object-fit: contain;
     background-position: center;
 
 }
 
 .item3 {
-    background-image: url('images/deadpoolandwolverine_lob_crd_03.jpg');
+    background-image: url('deadpoolandwolverine_lob_crd_03.jpg');
     width: 50%;
 }
 
 .item4 {
-    background-image: url('images/guardiansofthegalaxyvolume3_lob_crd_03.jpg');
+    background-image: url('guardiansofthegalaxyvolume3_lob_crd_03.jpg');
     width: 50%;
 }
 
 .item5 {
-    background-image: url('images/inception.jpg');
+    background-image: url('inception.jpg');
 }
 
 /* Categories Section Styles */

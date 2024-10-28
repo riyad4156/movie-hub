@@ -281,29 +281,39 @@ nav {
     width:  auto;
     background-image: url('AVATAR_RERLS_1SHT_DIGITAL_sRGB_V7.avif');
 }
-.item1:hover  .featured-video {
+.item1:hover .featured-video {
     display:block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
     position: absolute;
-    filter: none;
     pointer-events: none;
 }
 .featured-item1-uninfo {
+    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    bottom: -110%;    
+    border: none;
+}
+.featured-item1-uninfo button{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    backdrop-filter: blur(1px);
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: -150%;    
+    border: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
+}
+.featured-item:hover button{
+    background-color: #004b96;
+    transform: translateY(-80px);
+    transition: 0.6s;
+    opacity: 1;
 }
 .featured-item1-uninfo button{
     padding: 5px 10px;
@@ -314,9 +324,6 @@ nav {
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-}
-.featured-item:hover .featured-item1-uninfo {
-    opacity: 1;
 }
 .item2 {
     background-image: url('batman.webp');

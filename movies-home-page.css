@@ -275,6 +275,12 @@ nav {
    
     display: none;
 }
+.item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    width:  auto;
+    background-image: url('AVATAR_RERLS_1SHT_DIGITAL_sRGB_V7.avif');
+}
 .item1:hover  .featured-video {
     display:block;
     width: 100%;
@@ -309,12 +315,9 @@ nav {
     font-weight: 600;
     cursor: pointer;
 }
-.item1 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-image: url('AVATAR_RERLS_1SHT_DIGITAL_sRGB_V7.avif');
+.featured-item:hover .featured-item1-uninfo {
+    opacity: 1;
 }
-
 .item2 {
     background-image: url('batman.webp');
     object-fit: contain;
@@ -397,6 +400,7 @@ nav {
     margin-right: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    pointer-events: none;
 }
 
 .trending-item:hover {

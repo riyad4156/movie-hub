@@ -44,7 +44,7 @@ function displayMovies(moviesToShow = movies) {
     movieContainer.innerHTML = '';
 
     if (moviesToShow.length === 0) {
-        movieContainer.innerHTML = '<p>No movies found.</p>';
+        movieContainer.innerHTML = '<p style="color:red; font-size:20px;">No movies found.</p>';
         return;
     }
 
